@@ -25,14 +25,15 @@
         <div class="guess-computer">
             <h3 class="guess-title"> Computer</h3>
             <h4 class="guess-score"> Score: </h4>
-            <p id="computer-guess"> 6</p>
+            <p class="guess-score" id="computer-guess"> 6</p>
             <p class="winning-text" id="computer-wins">
                 Computer wins! 🍀
             </p>
         </div>
         <div class="human-guess">
-            <h3 class=""> You </h3>
-            <h4> Score: </h4>
+            <h3 class="human-guess"> You </h3>
+            <h4 class="human-guess"> Score: </h4>
+            <p class="human-guess" id="computer-guess"> 6</p>
             <input type="number" id="human-guess" min="0" max="9" value="0"/>
             <div class="number-controls">
                 <button class="number-control-left" disabled="true" id="substract">-</button>
@@ -46,24 +47,24 @@
             Next Round
         </button>
     </div>
+   </div>
     <div class="instructions">
         <div class="instruction">
-        <h3> Step 1</h3>
-        <p> Input a number between 0 and 9</p>
+            <h3> Step 1</h3>
+            <p> Input a number between 0 and 9</p>
         </div>
         <div class="instruction">
-        <h3> Step 2</h3>
-        <p> Click "Make a Guess" to submit your guess and see who won the round</p>
+            <h3> Step 2</h3>
+            <p> Click "Make a Guess" to submit your guess and see who won the round</p>
         </div>
         <div class="instruction">
             <h3> Step 3</h3>
             <p>
                 Click "Next Round" to play again
             </p>
-        
+    
         </div>
     </div>
-   </div>
    <script src="app.js"></script>
 </body>
 </html>
