@@ -21,27 +21,26 @@
             <span id="round-number"> 1 </span>
         </p>
         <p class = "guess-label">
-            Target number: ?
+            Target number: <span id="target-number">?</span>
         </p>
     </div>
     <div class="guessing-area">
         <div class="guess-computer">
             <h3 class="guess-title"> Computer</h3>
-            <h4 class="guess-score"> Score: </h4>
-            <p class="guess-score" id="computer-guess"> 6</p>
-            <p class="winning-text" id="computer-wins">
-                Computer wins! 🍀
-            </p>
+            <p class="guess-score"> Score: <span id="computer-score"> 0 </span> </p>
+                <p id="computer-guess">?</p>
+                <p class="winning-text" id="computer-wins"> </p>
         </div>
+   
         <div class="human-guess">
-            <h3 class="human-guess"> You </h3>
-            <h4 class="human-guess"> Score: </h4>
+            <h3 class="guess-label"> You </h3>
+            <p class="score-label"> Score: <span id="human-score">0</span></p>
             <input type="number" id="human-guess" min=0 max=9 value=0/>
             <div class="number-controls">
-                <button class="number-control-left" disabled="true" id="substract">-</button>
+                <button class="number-control-left" id="subtract" disabled >-</button>
                 <button class="number-control-right" id="add">+</button>
             </div>
-            <button class="button-main" id="guess" disabled="true">Make a Guess </button>
+            <button class="button-main" id="guess" >Make a Guess </button>
         </div>
     </div>
     <div class="next-round-container">
