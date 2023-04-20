@@ -80,7 +80,7 @@ input[type=number]{
     border-top-right-radius: 22.5px;
     border-bottom-right-radius: 22.5px;
     border-left-width: 0px;
-      
+    
 }
 
 .number-control-left, .number-control-right{
@@ -92,6 +92,8 @@ font-size: 24px;
 font-weight: 700px;
 cursor:pointer;
 color: white;
+background-color: #bc96df;
+
 }
 
 .button-main{
