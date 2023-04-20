@@ -1,10 +1,24 @@
 *{
      box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
 }
 body{
     background-color: rgb(219, 204, 233);
     font-family:Arial, Helvetica, sans-serif;
    
+}
+
+h1{
+    font-weight: bold;
+    color: rgb(62, 24, 79);
+}
+
+div.rounds{
+   color: rgb(62, 24, 79); 
+}
+.round-label{
+    font-size: 27px;
+       font-weight: 500;
 }
 .game-container{
     
@@ -36,8 +50,91 @@ padding: 19px;
 
 .human-guess{
   background-color: rgb(83, 29, 201);  
-  color: white;
+  color:rgb(255, 255, 255)
   
+}
+
+input[type=number]{
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+    color: rgb(62, 24, 79); 
+    margin: 0 auto;
+    margin-bottom: 7px;
+    text-align: center;
+}
+
+.number-controls button [disabled]{
+    color: #bc96df;
+    cursor: default;
+    
+}
+
+.number-control-left{
+    border-top-left-radius: 22.5px;
+    border-bottom-left-radius: 22.5px;
+    
+}
+
+.number-control-right{
+    border-top-right-radius: 22.5px;
+    border-bottom-right-radius: 22.5px;
+    border-left-width: 0px;
+      
+}
+
+.number-control-left, .number-control-right{
+ border:solid 1px white;
+display: inline-block;
+width: 45px;
+height: 35px;
+font-size: 24px;
+font-weight: 700px;
+cursor:pointer;
+color: white;
+}
+
+.button-main{
+   border: none;  
+    font-size: 15px;
+    padding: 10px 20px;
+      margin: 5px 0px 45px 0px;
+       font-weight: bold;
+       color: rgb(255, 255, 255);
+       background-color: rgb(119, 74, 138);
+       cursor: pointer;
+      
+       
+}
+.button-main:hover{
+    
+    background-color: rgb(172, 137, 205);
+     box-shadow: rgb(131, 102, 158) 0 -6px 8px inset;
+}
+
+.button-next{
+   background-color: rgb(172, 102, 202);
+   color: white;
+   padding: 15px 30px;
+   font-weight: bold;
+   font-size: 15px;
+   border: none;
+   margin: -6px 0px 45px 0px;
+   cursor: pointer;
+   border-radius: 10px;
+     touch-action: manipulation;
+     transition: all .15s;
+  user-select: none;
+
+}
+
+.button-next:hover{
+    background-color: #8a2be2;
+     box-shadow: #7324bd 0 -6px 8px inset;
+}
+
+.button-next:active{
+    transform: scale(1.025);
 }
 
 .instructions{
@@ -45,4 +142,9 @@ padding: 19px;
     width: 100%;
     display: flex;
     justify-content: space-around;
+}
+
+.instruction{
+    color: rgb(62, 24, 79);
+    text-align: center;
 }
