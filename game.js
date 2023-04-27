@@ -3,10 +3,18 @@ let target;
 // Second I have to click the make a guess button with my number option
 const humanGuessInput = document.getElementById('human-guess');
 const guessButton = document.getElementById('guess');
+const computerGuessDisplay = document.getElementById('computer-guess');
 // Third if I win, the text of make a guess button will change with you win!
 // If I lose I text under the computer section will say Computer win
 // The computer shows the target number choosen so I need to create a function with that.
+guessButton.addEventListener('click', () => {
+target = generateTarget();
+const currentHumanGuess = humanGuessInput.value;
+const computerGuess = Math.floor(Math.random() * 9);
+computerGuessDisplay.innerText = computerGuess;
+}
 
+);
 
 
 //First I have to click - + button tu choose my number so I have to disable the number button to do that.
